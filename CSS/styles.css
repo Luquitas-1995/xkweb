@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:ital,wght@0,200;0,400;0,500;0,600;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,800;1,900&family=Noto+Sans+Chakma&family=Noto+Sans+KR:wght@100&family=Roboto+Slab:wght@100;200;300;500;700;800;900&family=Rowdies:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto Slab', sans-serif ;
+    overflow: hidden;
+}
+
+.navbar{
+    background-color: #FFC90E;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    align-items: center;
+}
+
+.navbar .logo{
+    width: 60px;
+    height: 60px;
+    grid-column: 2 / 3;
+}
+
+.navbar .menu{
+    grid-column: 4 / 7;
+    display: flex;
+    justify-content: space-around;
+}
+
+.navbar .menu li{
+    list-style: none;
+}
+
+.navbar .menu a{
+    text-decoration: none;
+    color: #181818;
+    cursor: pointer;
+}
+
+.navbar .menu a:hover{
+    color: aliceblue;
+}
+
+
+.navbar .shoping{
+    grid-column: 8/ 9;
+}
+
+.navbar .menu-bar{
+    display: none;
+}
+
+/* Main Section */
+
+.main {
+    height: 80vh;
+    background-image: linear-gradient( rgba(16,16,16,.8), rgba( 16,16,16,.8)), url(../img/backgraundbody.jpg);
+    background-size: cover;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(8,1fr);
+}
+
+.main .info-content{
+    grid-column: 7 / 10;
+    grid-row: 3 / 6;
+    color: aliceblue;
+}
+
+.main h3{
+    font-family: 'monserrat', sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    
+}
+
+.main h1{
+    font-size: 3em;
+}
+
+.main p{
+    font-weight: 300;
+    font-family: 'monserrat',sans-serif;
+}
+
+.main .btn{
+    font-size: 1em;
+    background: none;
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 1px solid #FFC90E;
+    border-radius: 8px;
+    cursor: pointer;
+    color: aliceblue;
+}
+
+.main .btn:hover{
+    background-color: #FFC90E;
+    color: #181818 ;
+}
+
+/* Footer Section*/
+
+.footer{
+    display: grid;
+    height: 80px;
+    align-items: center;
+    background-color: black;
+    color: aliceblue;
+    grid-template-areas: 
+    "listen-online follow-me social-network";
+}
+
+.footer .listen-online{
+    grid-template-areas: listen-online;
+    display: flex;
+    justify-content: center;
+    background-color: #FFC90E;
+    padding: 16px;
+    color: #181818;
+}
+
+.footer .listen-online .fa-solid{
+    font-size: 1.5em;
+    margin-right: 15px;
+}
+
+.footer .follow-me{
+    grid-template-areas: follow-me;
+    text-align: center;
+}
+
+.footer .social-network{
+    grid-template-areas: social-network;
+    font-size: 1.3em;
+    
+}
+
+.footer .social-network .fa-brands{
+    margin-right: 15px;
+    color: #FFC90E;
+}
+
+.footer .social-network .fa-brands:hover{
+    color: aliceblue;
+    cursor: pointer;
+}
